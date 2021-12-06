@@ -1,0 +1,220 @@
+@font-face {
+    font-family: estedad;
+    src: url(fonts/Estedad-Medium.woff), url(fonts/Estedad-Medium.ttf), url(fonts/Estedad-Medium.woff2);
+}
+
+* {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+    font-family: estedad, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar {
+    font-size: large;
+    color: gray;
+}
+
+.login-holder {
+    border: gray 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.login-holder i {
+    margin: 0 5px;
+}
+
+.icons a {
+    margin: 0 2rem;
+}
+
+.carousel-item {
+    height: 80vh;
+}
+
+.slide-1,
+.slide-2,
+.slide-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-1 {
+    background-image: url(Parts_Needed_to_Build_a_PC.webp);
+}
+
+.slide-2 {
+    background-image: url(razer-keyboard.png);
+}
+
+.slide-3 {
+    background-image: url(Razer-Mouse-Dock-Chroma-Setup.jpg);
+}
+
+.carousel-caption h5 {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.cards-holder {
+    margin: 2rem 1rem;
+}
+
+.card-section {
+    direction: rtl;
+    margin: 2rem 1rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+.my-card {
+    overflow: hidden;
+}
+
+.my-card:hover {
+    box-shadow: 0px 0px 5px 1px black;
+    overflow: hidden;
+}
+
+.my-card img:hover {
+    transform: scale(1.05);
+}
+
+.stars {
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.star {
+    color: gold;
+    font-size: 0.7rem;
+}
+
+.star:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.label-holder {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.label {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: #a21441;
+    color: #fff;
+    border: 2px solid #700d2c;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 0.7rem;
+}
+
+.section-title {
+    direction: rtl;
+    margin: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #a21441;
+}
+
+.jadu {
+    position: relative;
+    transition: 0.7s;
+}
+
+.hide {
+    position: absolute;
+    display: none;
+}
+
+.jadu:hover .hide {
+    display: inline;
+    color: #fff;
+}
+
+.jadu:hover {
+    padding-left: 40px;
+}
+
+.footer {
+    margin: 2rem auto 0 auto;
+    background-color: #4d4d4d;
+    color: #fff;
+    display: grid;
+    grid: auto-flow / 3fr 2fr;
+    padding: 1rem;
+    text-align: justify;
+    direction: rtl;
+}
+
+.fab {
+    font-size: 2rem;
+    margin: 2rem;
+    color: #fff;
+}
+
+.fab:hover {
+    color: khaki;
+}
+
+@media screen and (max-width: 768px) {
+    .icons a {
+        margin: 0 1rem;
+    }
+    .login-holder {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .icons a {
+        margin: 0 0.5rem;
+    }
+    .login-holder {
+        font-size: 0.7rem;
+    }
+    .fab {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contact-us {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .fab {
+        font-size: 1rem;
+        margin: 1.2rem;
+    }
+}
